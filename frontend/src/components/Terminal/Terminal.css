@@ -1,0 +1,23 @@
+.terminal-container {
+  flex: 1;
+  min-height: 0;
+  overflow: hidden;
+  padding: 22px 24px;
+  background: #111821;
+}
+
+.terminal-container .xterm {
+  height: 100%;
+}
+
+.terminal-container .xterm-viewport {
+  background: #111821;
+  scrollbar-color: #354252 #111821;
+  scrollbar-width: thin;
+}
+
+@media (max-width: 700px) {
+  .terminal-container {
+    padding: 16px 13px;
+  }
+}

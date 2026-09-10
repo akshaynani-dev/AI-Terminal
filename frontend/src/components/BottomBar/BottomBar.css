@@ -1,0 +1,84 @@
+.bottom-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 48px;
+  padding: 0 34px;
+  color: #8d9aaa;
+  background: #111821;
+  border-top: 1px solid #283342;
+}
+
+.bottom-actions,
+.bottom-session {
+  display: flex;
+  align-items: center;
+}
+
+.bottom-actions {
+  gap: 6px;
+}
+
+.bottom-actions button,
+.reconnect-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 6px 9px;
+  color: #a4b0bf;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 11px;
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.bottom-actions button span {
+  color: #dfb65f;
+  font-size: 15px;
+}
+
+.bottom-actions button:hover,
+.bottom-actions button:focus-visible,
+.reconnect-button:hover,
+.reconnect-button:focus-visible {
+  color: #e7edf4;
+  background: #1a2430;
+  border-color: #344253;
+  outline: none;
+}
+
+.bottom-session {
+  gap: 15px;
+}
+
+.bottom-session .connection-status {
+  margin: 0;
+}
+
+.session-info {
+  color: #687687;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 10px;
+}
+
+.reconnect-button {
+  color: #e0b768;
+  border-color: #554728;
+}
+
+@media (max-width: 650px) {
+  .bottom-bar {
+    min-height: 52px;
+    padding: 0 10px;
+  }
+
+  .session-info {
+    display: none;
+  }
+
+  .bottom-session {
+    gap: 5px;
+  }
+}
